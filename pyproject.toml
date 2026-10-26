@@ -1,0 +1,17 @@
+[project]
+name = "db-theory-practice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "oneartemisshow", email = "salemmayhem666@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+db-theory-practice = "db_theory_practice:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
