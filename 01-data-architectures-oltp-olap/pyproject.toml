@@ -1,0 +1,24 @@
+[project]
+name = "01-data-architectures-oltp-olap"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "oneartemisshow", email = "salemmayhem666@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "apache-airflow==2.10.5",
+    "clickhouse-connect>=1.11.0",
+    "faker>=40.43.0",
+    "polars>=2.1.0",
+    "psycopg2-binary>=2.9.13",
+    "sqlalchemy>=1.4.36,<2.0",
+]
+
+[project.scripts]
+01-data-architectures-oltp-olap = "01_data_architectures_oltp_olap:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
