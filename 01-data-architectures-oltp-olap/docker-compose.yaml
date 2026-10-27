@@ -17,6 +17,10 @@ services:
     ports:
       - "8123:8123" # HTTP
       - "9000:9000" # Native
+    environment:
+      CLICKHOUSE_USER: analyst
+      CLICKHOUSE_PASSWORD: analyst
+      CLICKHOUSE_DB: marketplace_olap
     volumes:
       - ch_data:/var/lib/clickhouse
 
